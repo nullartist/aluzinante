@@ -1,3 +1,84 @@
-<!DOCTYPE html><html lang="en"><head><link href="styles/styles.css" rel="stylesheet"><style>body {
-               background-color: rgb(0,0, 0);
-            }</style><meta charset="UTF-8"><title>aLUZinante</title></head><body><div></div><div class="video-container"></div><video controls muted autoplay preload="auto" id="player-1" class="video"><source src="assets/gdls.mp4" type="video/mp4">Lo sentimos mucho pero tu navegador no soporta esta reproducción.</video><div><button id="unmute">Iniciar</button></div><script src="scripts/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles/styles.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <style>
+      body {
+         background-color: rgb(20,30, 1);
+      }
+   </style>
+        <title>aLUZinante</title>
+    </head>
+    <body>
+        <div style="display: none;">
+            <button id="play">play</button>
+            <button id="pause">pause</button>
+            <button id="reset">reset</button>
+           
+            <button id="skip-backward">salta 5 segundos atras</button>
+            <button id="skip-forward">salta 5 segundos adelante</button>
+        </div>
+        <div style="display: none;">
+            Tiempo Global: 
+            <time id="position"></time>
+            Tiempo Actual: 
+            <time id="current-time-1"></time>
+            <!-- <time id="current-time-2"></time> -->
+        </div>
+        <div>
+            <button id="unmute">Iniciar</button>
+        </div>
+        <div>
+        <!-- <audio muted autoplay preload="auto" id="player-1">
+            <source src="assets/negra.mp3" type="audio/mpeg"/>
+            <source src="assets/negra.aac" type="audio/aac"/>
+            <source src="assets/negra.m4a" type="audio/mp4"/>
+             -->
+            
+                <!-- <source src="assets/negra.ogg" type="audio/ogg">
+                <source src="assets/guadalajara.aac" type="audio/aac">
+            <source src="assets/guadalajara.m4a" type="audio/mp4">
+            <source src="assets/guadalajara.mp3" type="audio/mpeg">
+             
+            <source src="assets/guadalajara.mp3" type="video/mp4; codec=av01" />
+            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />  -->
+            <!-- Lo sentimos mucho pero tu navegador no soporta esta reproducción.
+        </audio>  -->
+        <!-- <video id="player-1">
+            <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
+            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
+        </video> -->
+        </div>
+
+        <div class="video-container"></div>
+        <video muted autoplay preload="auto" id="player-1" class="video">
+            <source src="assets/gdls.mp4" type="video/mp4" />
+            <!-- <source src="assets/gdls.av1.mp4" type="video/mp4; codec=av01"/>
+            <source src="assets/gdls.h264.mp4" type="video/mp4; codec=avc1" /> -->
+
+            
+            <!--
+                <source src="assets/gdls.av1.mp4" type="video/mp4; codec=av01" />
+                <source src="assets/negra.ogg" type="audio/ogg">
+                <source src="assets/guadalajara.aac" type="audio/aac">
+            <source src="assets/guadalajara.m4a" type="audio/mp4">
+            <source src="assets/guadalajara.mp3" type="audio/mpeg">
+             
+            <source src="assets/guadalajara.mp3" type="video/mp4; codec=av01" />
+            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" /> -->
+            Lo sentimos mucho pero tu navegador no soporta esta reproducción.
+        </video>
+
+          </div>
+        <!-- <video id="player-2">
+            <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
+            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
+        </video> -->
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
